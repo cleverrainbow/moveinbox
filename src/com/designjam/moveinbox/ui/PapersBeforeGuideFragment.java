@@ -1,5 +1,12 @@
 package com.designjam.moveinbox.ui;
 
-public class PapersBeforeGuideFragment {
+import com.actionbarsherlock.app.SherlockFragment;
 
+public class PapersBeforeGuideFragment extends SherlockFragment {
+
+	
+	@Override
+	public void onCreateView(){
+		
+	}
 }

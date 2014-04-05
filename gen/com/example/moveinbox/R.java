@@ -1062,13 +1062,15 @@ containing a value of this type.
         public static final int left=0x7f040010;
         public static final int listMode=0x7f040002;
         public static final int margin=0x7f040012;
+        public static final int menu_frame=0x7f040038;
+        public static final int name_id=0x7f040037;
         public static final int normal=0x7f040001;
         public static final int right=0x7f040011;
         public static final int selected_view=0x7f040014;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
         public static final int showTitle=0x7f040007;
-        public static final int slidingmenumain=0x7f040037;
+        public static final int slidingmenumain=0x7f040039;
         public static final int tabMode=0x7f040003;
         public static final int useLogo=0x7f040004;
         public static final int wrap_content=0x7f040000;
@@ -1098,10 +1100,13 @@ containing a value of this type.
         public static final int abs__search_dropdown_item_icons_2line=0x7f030012;
         public static final int abs__search_view=0x7f030013;
         public static final int abs__simple_dropdown_hint=0x7f030014;
-        public static final int papers_before_guide_fragment=0x7f030015;
-        public static final int sherlock_spinner_dropdown_item=0x7f030016;
-        public static final int sherlock_spinner_item=0x7f030017;
-        public static final int slidingmenumain=0x7f030018;
+        public static final int list=0x7f030015;
+        public static final int menu_frame=0x7f030016;
+        public static final int papers_before_guide_fragment=0x7f030017;
+        public static final int sherlock_spinner_dropdown_item=0x7f030018;
+        public static final int sherlock_spinner_item=0x7f030019;
+        public static final int slidingmenumain=0x7f03001a;
+        public static final int splash=0x7f03001b;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 

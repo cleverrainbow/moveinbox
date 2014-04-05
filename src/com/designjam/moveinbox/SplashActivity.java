@@ -1,5 +1,7 @@
 package com.designjam.moveinbox;
 
-public class SplashActivity {
+import android.app.Activity;
+
+public class SplashActivity extends Activity {
 
 }

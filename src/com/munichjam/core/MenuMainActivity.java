@@ -1,12 +1,12 @@
 package com.munichjam.core;
 
+import android.R;
+import android.app.Fragment;
 import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
-import com.yljv.alarmapp.ui.MenuList;
-import com.yljv.alarmapp.ui.MyAlarmListFragment;
+
 
 public class MenuMainActivity extends BaseActivity {
 

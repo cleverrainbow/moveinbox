@@ -17,7 +17,6 @@
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:adjustViewBounds="true"
-        android:src=""
         android:layout_weight="0.40" />
 
     <TextView
