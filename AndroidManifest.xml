@@ -9,12 +9,26 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/box_logo_header"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
 
     	<activity
             android:name="com.designjam.moveinbox.core.MenuMainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible">
+
+        </activity>
+        <activity
+            android:name="com.designjam.moveinbox.core.BaseActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        
+        <activity
+            android:name="com.designjam.moveinbox.SplashActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateVisible">
@@ -25,13 +39,6 @@
             </intent-filter>  
 
         </activity>
-        <activity
-            android:name="com.designjam.moveinbox.core.BaseActivity"
-            android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustResize" >
-        </activity>
-        
 </application>
         
 </manifest>

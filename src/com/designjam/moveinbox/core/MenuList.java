@@ -22,8 +22,6 @@ public class MenuList extends SherlockListFragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.list, container, false);
-		TextView name = (TextView) view.findViewById(R.id.name_id);
-		name.setText(Html.fromHtml("<b>wakeme</b>app"));
 		
 		return view;
 	}
@@ -36,6 +34,8 @@ public class MenuList extends SherlockListFragment {
 		
 		setListAdapter(menuAdapter);
 	}
+	
+	
 
 	@Override
 	public void onListItemClick(ListView l, View v, int position, long id) {

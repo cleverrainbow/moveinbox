@@ -22,6 +22,8 @@ public class SplashActivity extends Activity implements OnClickListener {
 		
 		Button button = (Button) findViewById(R.id.start_move);
 		button.setOnClickListener(this);
+		
+		getActionBar().hide();
 	}
 
 	@Override
