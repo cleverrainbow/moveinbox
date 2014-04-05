@@ -4,9 +4,10 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
+import com.example.moveinbox.R;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
-import com.yljv.alarmapp.ui.MenuList;
-import com.yljv.alarmapp.ui.MyAlarmListFragment;
+
+
 
 public class MenuMainActivity extends BaseActivity {
 
@@ -27,10 +28,11 @@ public class MenuMainActivity extends BaseActivity {
 			mainView = getSupportFragmentManager().getFragment(
 					savedInstanceState, "mainView");
 		}
+		/*
 		if (savedInstanceState == null) {
 			mainView = (Fragment) new MyAlarmListFragment();
 		}
-
+		*/
 		setContentView(R.layout.content_frame);
 		getSupportFragmentManager().beginTransaction()
 				.replace(R.id.content_frame, mainView).commit();

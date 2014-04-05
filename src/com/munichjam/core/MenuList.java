@@ -1,7 +1,7 @@
 package com.munichjam.core;
 
+import android.app.Fragment;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,8 +11,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockListFragment;
-import com.yljv.alarmapp.MenuMainActivity;
-import com.yljv.alarmapp.R;
+import com.example.moveinbox.R;
 
 public class MenuList extends SherlockListFragment {
 	
@@ -41,6 +40,7 @@ public class MenuList extends SherlockListFragment {
 	@Override
 	public void onListItemClick(ListView l, View v, int position, long id) {
 		Fragment newContent = null; 
+		/*
 		switch(position) {
 		case 0: 
 			newContent = new MyAlarmListFragment();
@@ -55,6 +55,7 @@ public class MenuList extends SherlockListFragment {
 			newContent = new SettingsFragment();
 			break;
 		}
+		*/
 		if (newContent != null) {
 			switchFragment(newContent);
 		}
@@ -65,10 +66,12 @@ public class MenuList extends SherlockListFragment {
 			return;
 		}
 		
+		/*
 		if (getActivity() instanceof MenuMainActivity) {
 			MenuMainActivity mma = (MenuMainActivity) getActivity();
 			mma.switchContent(fragment);
-		} 
+		}
+		*/ 
 	}
 	
 }
