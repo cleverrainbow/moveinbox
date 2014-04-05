@@ -40,8 +40,7 @@ public class MenuList extends SherlockListFragment {
 	@Override
 	public void onListItemClick(ListView l, View v, int position, long id) {
 		Fragment newContent = null; 
-		/*
-		switch(position) {
+		/*switch(position) {
 		case 0: 
 			newContent = new MyAlarmListFragment();
 			break;
@@ -54,8 +53,7 @@ public class MenuList extends SherlockListFragment {
 		case 3: 
 			newContent = new SettingsFragment();
 			break;
-		}
-		*/
+		}*/
 		if (newContent != null) {
 			switchFragment(newContent);
 		}

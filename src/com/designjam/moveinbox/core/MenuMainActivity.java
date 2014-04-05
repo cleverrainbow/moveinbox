@@ -4,7 +4,10 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
+import com.actionbarsherlock.app.ActionBar;
+import com.actionbarsherlock.app.ActionBar.Tab;
 import com.designjam.moveinbox.R;
+import com.designjam.moveinbox.helper.TabListener;
 import com.designjam.moveinbox.ui.PapersBeforeGuideFragment;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
@@ -23,6 +26,22 @@ public class MenuMainActivity extends BaseActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
+		ActionBar actionBar = getSupportActionBar();
+		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
+		actionBar.setDisplayShowTitleEnabled(false);
+		
+		Tab tab = actionBar.newTab()
+				.setText("Guide")
+				.setTabListener(new TabListener<PapersBeforeGuideFragment>(this, "Guide", PapersBeforeGuideFragment.class));
+		actionBar.addTab(tab);
+		tab = actionBar.newTab()
+				.setText("Questions")
+				.setTabListener(new TabListener<PapersBeforeGuideFragment>(this, "Guide", PapersBeforeGuideFragment.class));
+		actionBar.addTab(tab);
+		tab = actionBar.newTab()
+				.setText("TODO")
+				.setTabListener(new TabListener<PapersBeforeGuideFragment>(this, "Guide", PapersBeforeGuideFragment.class));
+		actionBar.addTab(tab);
 
 		if (savedInstanceState != null) {
 			mainView = getSupportFragmentManager().getFragment(
