@@ -1,4 +1,4 @@
-package com.munichjam.core;
+package com.designjam.moveinbox.core;
 
 import android.app.Fragment;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockListFragment;
-import com.example.moveinbox.R;
+import com.designjam.moveinbox.R;
 
 public class MenuList extends SherlockListFragment {
 	

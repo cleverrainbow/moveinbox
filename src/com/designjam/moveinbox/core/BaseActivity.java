@@ -1,24 +1,14 @@
-package com.munichjam.core;
+package com.designjam.moveinbox.core;
 
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.WindowManager;
 
 import com.actionbarsherlock.app.SherlockListFragment;
-import com.example.moveinbox.R;
+import com.actionbarsherlock.view.Menu;
+import com.actionbarsherlock.view.MenuItem;
+import com.designjam.moveinbox.R;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
-
-/*
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.WindowManager;
-
-import com.actionbarsherlock.app.SherlockListFragment;
-import com.example.moveinbox.R;
-import com.jeremyfeinstein.slidingmenu.lib.app.SlidingFragmentActivity;
-*/
 
 
 public class BaseActivity extends SlidingFragmentActivity {
@@ -56,7 +46,7 @@ public class BaseActivity extends SlidingFragmentActivity {
 		//getSupportActionBar().setIcon(R.drawable.launchericon_artwork);
 	}
 	
-	/*
+	
 	@Override	
 	
 	public boolean onOptionsItemSelected(MenuItem item) {
@@ -67,7 +57,7 @@ public class BaseActivity extends SlidingFragmentActivity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
-	*/
+	
 	
 	/*
 	@Override
