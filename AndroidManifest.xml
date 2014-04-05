@@ -12,6 +12,21 @@
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-    </application>
 
+    	<activity
+            android:name="com.munichjam.core.MenuMainActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible"
+            android:parentActivityName="com.yljv.alarmapp.SplashActivity"  >
+        </activity>
+        <activity
+            android:name="com.munichjam.core.BaseActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+        </activity>
+        
+</application>
+        
 </manifest>
