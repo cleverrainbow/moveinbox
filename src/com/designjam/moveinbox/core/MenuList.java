@@ -11,7 +11,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.actionbarsherlock.app.SherlockListFragment;
-import com.example.moveinbox.R;
+import com.designjam.moveinbox.R;
 
 public class MenuList extends SherlockListFragment {
 	

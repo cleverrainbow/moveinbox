@@ -4,7 +4,8 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
-import com.example.moveinbox.R;
+import com.designjam.moveinbox.R;
+import com.designjam.moveinbox.ui.PapersBeforeGuideFragment;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 
@@ -20,19 +21,15 @@ public class MenuMainActivity extends BaseActivity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 
 
 		if (savedInstanceState != null) {
 			mainView = getSupportFragmentManager().getFragment(
 					savedInstanceState, "mainView");
+		}else{
+			mainView = (Fragment) new PapersBeforeGuideFragment();
 		}
-		/*
-		if (savedInstanceState == null) {
-			mainView = (Fragment) new MyAlarmListFragment();
-		}
-		*/
 		setContentView(R.layout.content_frame);
 		getSupportFragmentManager().beginTransaction()
 				.replace(R.id.content_frame, mainView).commit();
