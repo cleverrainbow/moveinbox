@@ -2,7 +2,6 @@ package com.munichjam.core;
 
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
 import android.view.WindowManager;
 
 import com.actionbarsherlock.app.SherlockListFragment;
@@ -29,6 +28,7 @@ public class BaseActivity extends SlidingFragmentActivity {
 	public Menu menu;
 	
 	public BaseActivity(int title){
+		super();
 		appTitle = title;
 	}
 
